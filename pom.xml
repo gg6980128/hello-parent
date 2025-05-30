@@ -34,6 +34,7 @@
     <modules>
         <module>common</module>
         <module>starter</module>
+        <module>bom</module>
     </modules>
 
     <dependencyManagement>
@@ -75,7 +76,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.10.1</version>
+                    <version>3.14.0</version>
                     <configuration>
                         <source>${java.version}</source>
                         <target>${java.version}</target>
