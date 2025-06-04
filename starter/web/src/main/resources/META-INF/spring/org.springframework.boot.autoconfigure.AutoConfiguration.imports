@@ -1,1 +1,1 @@
-com.hello.starter.web.handler.GlobalExceptionHandler
+com.hello.starter.web.config.WebMvcAutoConfiguration
