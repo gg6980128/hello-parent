@@ -25,16 +25,19 @@
     <properties>
         <revision>1.0.0</revision>
         <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>3.4.0</spring-boot.version>
         <spring-cloud.version>2023.0.0</spring-cloud.version>
         <spring-cloud-alibaba.version>2023.0.1.2</spring-cloud-alibaba.version>
         <hutool.version>5.8.30</hutool.version>
+        <redisson.version>3.46.0</redisson.version>
     </properties>
 
     <modules>
+        <module>bom</module>
         <module>common</module>
         <module>starter</module>
-        <module>bom</module>
     </modules>
 
     <dependencyManagement>
@@ -66,6 +69,12 @@
                 <version>${hutool.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

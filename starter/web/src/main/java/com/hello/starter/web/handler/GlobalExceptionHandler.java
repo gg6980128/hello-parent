@@ -1,4 +1,4 @@
-package com.hello.starter.web.config;
+package com.hello.starter.web.handler;
 
 import com.hello.common.core.exception.BusinessException;
 import com.hello.common.core.pojo.R;

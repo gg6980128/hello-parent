@@ -14,7 +14,16 @@
     <packaging>pom</packaging>
 
     <modules>
+<!--        <module>json</module>-->
+        <module>redis</module>
         <module>web</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

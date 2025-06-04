@@ -1,0 +1,2 @@
+com.hello.starter.redis.config.RedisAutoConfiguration
+com.hello.starter.redis.config.CacheAutoConfiguration
