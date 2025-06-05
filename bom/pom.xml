@@ -21,6 +21,11 @@
             </dependency>
             <dependency>
                 <groupId>com.hello.starter</groupId>
+                <artifactId>hello-starter-idempotent</artifactId>
+                <version>${revision}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.hello.starter</groupId>
                 <artifactId>hello-starter-redis</artifactId>
                 <version>${revision}</version>
             </dependency>
@@ -31,16 +36,4 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.springframework.boot</groupId>
-                    <artifactId>spring-boot-maven-plugin</artifactId>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
-
 </project>

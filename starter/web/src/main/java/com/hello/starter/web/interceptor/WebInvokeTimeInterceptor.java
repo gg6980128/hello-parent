@@ -44,9 +44,9 @@ public class WebInvokeTimeInterceptor implements HandlerInterceptor {
             Map<String, String[]> parameterMap = request.getParameterMap();
             if (MapUtil.isNotEmpty(parameterMap)) {
                 String parameters = JacksonUtils.toJsonString(parameterMap);
-                log.info("[PLUS]开始请求 => URL[{}],参数类型[param],参数:[{}]", url, parameters);
+                log.info("开始请求 => URL[{}],参数类型[param],参数:[{}]", url, parameters);
             } else {
-                log.info("[PLUS]开始请求 => URL[{}],无参数", url);
+                log.info("开始请求 => URL[{}],无参数", url);
             }
         }
 
@@ -67,7 +67,7 @@ public class WebInvokeTimeInterceptor implements HandlerInterceptor {
         StopWatch stopWatch = KEY_CACHE.get();
         if (ObjectUtil.isNotNull(stopWatch)) {
             stopWatch.stop();
-            log.info("[PLUS]结束请求 => URL[{}],耗时:[{}]毫秒", request.getMethod() + " " + request.getRequestURI(), stopWatch.getTotalTimeMillis());
+            log.info("结束请求 => URL[{}],耗时:[{}]毫秒", request.getMethod() + " " + request.getRequestURI(), stopWatch.getTotalTimeMillis());
             KEY_CACHE.remove();
         }
     }
