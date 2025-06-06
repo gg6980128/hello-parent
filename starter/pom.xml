@@ -16,6 +16,7 @@
     <modules>
         <module>idempotent</module>
         <module>redis</module>
+        <module>sa-token</module>
         <module>web</module>
     </modules>
 

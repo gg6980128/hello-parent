@@ -21,12 +21,15 @@ public class BusinessException extends RuntimeException {
      * @param args     参数
      */
     public BusinessException(int code, String i18nCode, Object... args) {
-        super(MessageResourceUtils.format(i18nCode, args));
-        this.code = code;
+        this(code, MessageResourceUtils.format(i18nCode, args));
     }
 
     public BusinessException(int code, String message) {
         super(message);
         this.code = code;
+    }
+
+    public BusinessException(String message) {
+        this(500, message);
     }
 }
