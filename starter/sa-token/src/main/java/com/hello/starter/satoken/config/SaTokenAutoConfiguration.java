@@ -5,6 +5,7 @@ import cn.dev33.satoken.jwt.StpLogicJwtForSimple;
 import cn.dev33.satoken.stp.StpInterface;
 import cn.dev33.satoken.stp.StpLogic;
 import com.hello.common.core.factory.YmlPropertySourceFactory;
+import com.hello.starter.satoken.aspect.LogAspect;
 import com.hello.starter.satoken.core.HelloSaTokenDao;
 import com.hello.starter.satoken.core.SaPermissionImpl;
 import com.hello.starter.satoken.handle.SaTokenExceptionHandler;
@@ -51,4 +52,11 @@ public class SaTokenAutoConfiguration {
         return new SaTokenExceptionHandler();
     }
 
+    /**
+     * 日志切面
+     */
+    @Bean
+    public LogAspect logAspect(){
+        return new LogAspect();
+    }
 }
