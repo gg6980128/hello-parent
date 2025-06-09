@@ -11,5 +11,5 @@ sa-token:
   is-read-cookie: false
   # token前缀
   token-prefix: "Bearer"
-
-
+  # jwt 密钥(一般由使用方设置)
+  jwt-secret-key: hello
